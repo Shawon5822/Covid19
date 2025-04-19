@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField id="patientField" layoutX="14.0" layoutY="25.0" text="Patient Id " />
+      <Button id="requestOTPbutton" layoutX="15.0" layoutY="61.0" mnemonicParsing="false" text="Request OTP" />
+      <TextField id="otpField" layoutX="14.0" layoutY="95.0" text="OTP Input" />
+      <Button id="verifyButton" layoutX="14.0" layoutY="127.0" mnemonicParsing="false" text="Verify" />
+      <ListView id="recordsListView" layoutX="15.0" layoutY="171.0" prefHeight="173.0" prefWidth="557.0" />
+      <Button id="viewRecordbutton" layoutX="38.0" layoutY="366.0" mnemonicParsing="false" text="View" />
+      <Button id="downloadpdfbutton" layoutX="504.0" layoutY="366.0" mnemonicParsing="false" text="Download" />
+      <TextArea id="recordViewerArea" layoutX="14.0" layoutY="420.0" prefHeight="201.0" prefWidth="563.0" text="Record Detail Display" />
+   </children>
+</AnchorPane>
