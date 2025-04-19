@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="patientSelector" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ComboBox layoutX="321.0" layoutY="14.0" prefWidth="150.0" promptText="AutoCompleteField" />
+      <TabPane layoutX="27.0" layoutY="14.0" prefHeight="143.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="History ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+          <Tab text="Tabs">
+            <content>
+              <AnchorPane id="historyTabPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <TableView id="diagnosisTable" layoutX="27.0" layoutY="120.0" prefHeight="124.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Diagnosis" />
+          <TableColumn prefWidth="75.0" text="History" />
+        </columns>
+      </TableView>
+      <TableView layoutX="271.0" layoutY="117.0" prefHeight="131.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Prescription " />
+          <TableColumn prefWidth="75.0" text="History" />
+        </columns>
+      </TableView>
+      <TableView id="labTable" layoutX="27.0" layoutY="264.0" prefHeight="143.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Lab Test" />
+          <TableColumn prefWidth="75.0" text="HIstory" />
+        </columns>
+      </TableView>
+      <TableView layoutX="271.0" layoutY="264.0" prefHeight="143.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Visit" />
+          <TableColumn id="visitSummaryTable" prefWidth="75.0" text="Summaries" />
+        </columns>
+      </TableView>
+      <TextField layoutX="27.0" layoutY="433.0" text="Analyze History" />
+      <TextArea id="insightArea" layoutX="27.0" layoutY="476.0" prefHeight="115.0" prefWidth="182.0" text="Insight Suggestions&#10;" />
+   </children>
+</AnchorPane>
