@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ComboBox layoutX="14.0" layoutY="21.0" prefWidth="150.0" promptText="Select Patient Visit" />
+      <Button id="generateSummaryButton" layoutX="164.0" layoutY="61.0" mnemonicParsing="false" text="Generate Summary" />
+      <TextArea id="Visit Summary Content" layoutX="14.0" layoutY="103.0" prefHeight="200.0" prefWidth="200.0" text="Visit Summary Content" />
+      <Button id="approveButton" layoutX="340.0" layoutY="290.0" mnemonicParsing="false" text="Approve Summary" />
+      <Label id="summaryStatusLabel" layoutX="24.0" layoutY="328.0" text="Summary Status" />
+   </children>
+</AnchorPane>
