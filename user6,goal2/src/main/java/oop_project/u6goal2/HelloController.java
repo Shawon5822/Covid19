@@ -1,4 +1,4 @@
-package oop_project.goal2;
+package oop_project.u6goal2;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
