@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView id="prescriptionListView" layoutX="66.0" layoutY="48.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label id="refillStatusLabel" layoutX="66.0" layoutY="277.0" text="Refill status" />
+      <ComboBox id="pharmacyComboBox" layoutX="183.0" layoutY="272.0" prefWidth="150.0" promptText="Pharmacy" />
+      <Button id="submitButton" layoutX="183.0" layoutY="338.0" mnemonicParsing="false" text="Submit refill button" />
+      <Label id="confirmationLabel" layoutX="62.0" layoutY="343.0" text="Confirmation" />
+   </children>
+</AnchorPane>
